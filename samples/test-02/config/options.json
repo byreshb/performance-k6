@@ -1,0 +1,25 @@
+{
+  "stages": [
+    {
+      "duration": "1s",
+      "target": 1
+    },
+    {
+      "duration": "1s",
+      "target": 1
+    },
+    {
+      "duration": "1s",
+      "target": 1
+    },
+    {
+      "duration": "1s",
+      "target": 1
+    }
+  ],
+  "thresholds": {
+    "http_req_failed": ["rate<0.01"],
+    "http_req_duration": ["avg<100", "p(95)<200"]
+  },
+  "userAgent": "MyK6UserAgentString/1.0"
+}
